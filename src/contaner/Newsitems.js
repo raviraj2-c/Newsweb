@@ -6,6 +6,9 @@ export class Newsitems extends Component {
     return (
       <div>
         <div className="card" style={{width: "18rem"}}>
+        <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:'90%', zIndex:'1'}}>
+    {source}
+  </span>
   <img src={!imgurl ?"https://static.foxnews.com/foxnews.com/content/uploads/2024/08/3-Microsoft-apps-on-macOS-could-be-your-biggest-privacy-threat-outro.jpg" : imgurl} style= {{height: "10rem"}} className="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{title}....</h5><hr style={{border : '1px solid '}}/>
